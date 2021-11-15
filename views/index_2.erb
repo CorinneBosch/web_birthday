@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section id='box'>
+    <form action="/welcome" method='post'>
+
+      <h1>Hello There!</h1>
+      <section class='name'>
+        <label for='name'>What's your name?</label>
+      </section>
+      <section class='name'>
+        <input type="text" name='name'>
+      </section>
+
+      <section class='birthdate'>
+        <label for='birthdate'>When is your birthday?</label>
+      </section>
+      <section class='gugus'>
+        <input id='picker' />
+        <script type='text/javascript'>
+            datepicker('#picker', {
+            select: 'range',
+            rangeHighlight: true,
+            showRangeLabels: true
+          });
+        </script>
+      </section>
+        <button type='submit' style>Go!</button>
+    </form> 
+    </section>
+  </body>
+</html>
+

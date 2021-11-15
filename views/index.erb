@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section id='box'>
+    <form action="/welcome" method='post'>
+
+      <h1>Hello There!</h1>
+      <section class='name'>
+        <label for='name'>What's your name?</label>
+      </section>
+      <section class='name'>
+        <input type="text" name='name'>
+      </section>
+
+      <section class='birthdate'>
+        <label for='birthdate'>When is your birthday?</label>
+      </section>
+      <section class='gugus'>
+        <input type='date' name='birthdate'
+               value="2000-01-01"
+               min='1900-01-01' max='2021-08-2'>
+      </section>
+        <button type='submit' style>Go!</button>
+    </form> 
+    </section>
+  </body>
+</html>
+
